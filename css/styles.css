@@ -12,10 +12,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .header h2 {
   color: #e5e5e5;
   font-size: 24px;
 }
+
 .header .img-header {
   height: 56px;
   width: auto;
@@ -23,6 +25,7 @@
 
 h2 {
   font-family: "Press Start 2P", system-ui;
+  text-align: center;
 }
 
 /* MAIN */
@@ -30,26 +33,164 @@ h2 {
 .section-agregar-productos {
   padding: 40px;
 }
+
 .container-form {
   display: grid;
-  grid-template-columns: repeat(5fr);
+
   grid-gap: 40px;
 }
+
+.container-form h2 {
+  padding: 40px 0 0 0;
+}
+
 .container-form input {
   height: 58px;
-  border-radius: 1px solid #03318c;
+  border: 3px solid #03318c;
+  border-radius: 10px;
 }
+
+.container-form input:hover {
+  border: 3px solid #8c0375;
+}
+
 .botones {
   display: flex;
+
+  gap: 13px;
+  justify-content: space-between;
+}
+
+.botones button {
   height: 55px;
   width: 164px;
-  gap: 13px;
+  border: 3px solid #03318c;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+.btn-enviar {
+  background-color: #03318c;
+  color: #FFFFFF;
+}
+
+.btn-enviar:hover {
+  background-color: #8c0375;
+}
+
+
+.btn-limpiar {
+  background-color: #FFFFFF;
+  color: #03318c;
 }
 
 /* SEGUNDA SECCION */
 .section-productos {
-  padding: 40px;
+  padding: 10px;
 }
+
+.section-productos h2 {
+  padding: 40px 0;
+}
+
+.div-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-gap: 10px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Personalización del scroll */
+.div-productos::-webkit-scrollbar {
+  height: 6px;
+  /* Altura de la barra */
+
+}
+
+.div-productos::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  /* Color del thumb (parte que se mueve) */
+  border-radius: 10px;
+  /* Redondeo para que sea como una línea */
+}
+
+.div-productos::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+  /* Color al pasar el mouse */
+}
+
+.div-productos::-webkit-scrollbar-track {
+  background: transparent;
+  /* Fondo del scrollbar invisible */
+}
+
+.product-card {
+
+  width: 192px;
+  height: 254px;
+  background-color: #5300c8;
+  margin: 39px 0;
+  border: 4px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.contenido-card {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.img-card {
+  height: 170px;
+  width: 172px;
+  border: 4px solid black;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center top;
+  margin: auto;
+
+
+}
+
+.descripcion-card {
+  display: grid;
+  gap: 10px;
+  color: #FFFFFF;
+  font-family: "IBM Plex Mono", monospace;
+
+}
+
+.descripcion-card h3 {
+  font-weight: 200;
+  font-size: 15px;
+  
+}
+
+.descripcion-card span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.div-price-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+
+
+}
+
+
+
 /* FOOTER */
 .footer {
   height: 168px;
@@ -66,10 +207,21 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .footer p {
   font-size: 16px;
   font-family: "IBM Plex Mono", monospace;
+
 }
+
+footer .footer-by {
+  font-weight: 200;
+}
+
+footer .footer-alura {
+  font-weight: 100;
+}
+
 .footer h2 {
   font-size: 24px;
 }

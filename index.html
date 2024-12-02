@@ -1,58 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alura Geek</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <img
-        class="img-header"
-        src="img/corazones-alurageek.png"
-        alt="imagenes de corazones"
-      />
-      <h2>AluraGeek</h2>
-    </header>
 
-    <!-- MAIN -->
-    <main class="main">
-      <!-- SECCION DE AGREGAR PRODUCTOS -->
-      <section class="section-agregar-productos">
-        <form class="container-form" action="">
-          <h2>AGREGAR PRODUCTOS:</h2>
-          <input type="text" placeholder="nombre..." required />
-          <input type="number" placeholder="precio..." required />
-          <input type="url" placeholder="imagen..." required />
-          <div class="botones">
-            <button type="submit">Enviar</button>
-            <button type="submit">Limpiar</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alura Geek</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <img class="img-header" src="img/corazones-alurageek.png" alt="imagenes de corazones" />
+    <h2>AluraGeek</h2>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main">
+    <!-- SECCION DE AGREGAR PRODUCTOS -->
+    <section class="section-agregar-productos">
+      <form class="container-form" action="">
+        <h2>AGREGAR PRODUCTOS:</h2>
+        <input type="text" placeholder="nombre..." required />
+        <input type="number" placeholder="precio..." required />
+        <input type="url" placeholder="imagen..." required />
+        <div class="botones">
+          <button class="btn-enviar" type="submit">Enviar</button>
+          <button class="btn-limpiar" type="submit">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- SECCION  PRODUCTOS -->
+    <section class="section-productos">
+      <h2>MIS PRODUCTOS:</h2>
+      <div class="div-productos">
+
+        <figure id="1" class="product-card">
+          <div class="contenido-card">
+            <img class="img-card" src="img/img-productos/kaneki.jpg" alt="Camiseta de algodón blanca">
+            <figcaption class="descripcion-card">
+              <h3>Camiseta Blanca</h3>
+              <div class="div-price-btn">
+                <span class="price">$19.99</span>
+                <button class="btn-eliminar"><img src="img/Vector.png" alt="imagen"></button>
+              </div>
+            </figcaption>
           </div>
-        </form>
-      </section>
+        </figure>
 
-      <!-- SECCION  PRODUCTOS -->
-      <section class="section-productos">
-        <h2>MIS PRODUCTOS:</h2>
-      </section>
-    </main>
+        <figure id="2" class="product-card">
+          <div class="contenido-card">
+            <img class="img-card" src="img/img-productos/arima.webp" alt="Camiseta de algodón blanca">
+            <figcaption class="descripcion-card">
+              <h3>Camiseta Blanca</h3>
+              <span class="price">$19.99</span>
+            </figcaption>
+          </div>
+        </figure>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="div-footer">
-        <img
-          class="img-header"
-          src="img/corazones-alurageek.png"
-          alt="imagenes de corazones"
-        />
-        <h2>AluraGeek</h2>
+        <figure id="3" class="product-card">
+          <div class="contenido-card">
+            <img class="img-card" src="img/img-productos/kaneki.jpg" alt="Camiseta de algodón blanca">
+            <figcaption class="descripcion-card">
+              <h3>Camiseta Blanca</h3>
+              <div class="div-price-btn">
+                <span class="price">$19.99</span>
+                <button class="btn-eliminar"><img src="img/Vector.png" alt="imagen"></button>
+              </div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure id="4" class="product-card">
+          <div class="contenido-card">
+            <img class="img-card" src="img/img-productos/touka.jpg" alt="Camiseta de algodón blanca">
+            <figcaption class="descripcion-card">
+              <h3>Camiseta Blanca</h3>
+              <div class="div-price-btn">
+                <span class="price">$19.99</span>
+                <button class="btn-eliminar"><img src="img/Vector.png" alt="imagen"></button>
+              </div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure id="5" class="product-card">
+          <div class="contenido-card">
+            <img class="img-card" src="img/img-productos/arima.webp" alt="Camiseta de algodón blanca">
+            <figcaption class="descripcion-card">
+              <h3>Camiseta Blanca</h3>
+              <div class="div-price-btn">
+                <span class="price">$19.99</span>
+                <button class="btn-eliminar"><img src="img/Vector.png" alt="imagen"></button>
+              </div>
+            </figcaption>
+          </div>
+        </figure>
+
+        <figure id="6" class="product-card">
+          <div class="contenido-card">
+            <img class="img-card" src="img/img-productos/touka.jpg" alt="Camiseta de algodón blanca">
+            <figcaption class="descripcion-card">
+              <h3>Camiseta Blanca</h3>
+              <div class="div-price-btn">
+                <span class="price">$19.99</span>
+                <button class="btn-eliminar"><img src="img/Vector.png" alt="imagen"></button>
+              </div>
+            </figcaption>
+          </div>
+        </figure>
+
       </div>
+    </section>
+  </main>
 
-      <p>DESARROLLADO POR EVELYN ORTIZ</p>
-      <p>ALURA LATAM - 2024</p>
-    </footer>
-  </body>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="div-footer">
+      <img class="img-header" src="img/corazones-alurageek.png" alt="imagenes de corazones" />
+      <h2>AluraGeek</h2>
+    </div>
+
+    <p class="footer-by">DESARROLLADO POR EVELYN ORTIZ</p>
+    <p class="footer-alura">ALURA LATAM - 2024</p>
+  </footer>
+</body>
+
 </html>
