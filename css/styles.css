@@ -47,11 +47,29 @@ h2 {
 .container-form input {
   height: 58px;
   border: 3px solid #03318c;
-  border-radius: 10px;
+  border-radius: 58px;
+  outline: none;
+  /* Quita el borde azul predeterminado */
+  transition: border-color 0.3s ease;
+  /* Transición suave */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #03318c;
+
 }
 
-.container-form input:hover {
-  border: 3px solid #8c0375;
+.container-form input:focus {
+  border: 3px solid #03318c;
+}
+
+.container-form input::placeholder {
+  color: #03318c;
+  /* Mismo color que el texto ingresado */
+
+  font-size: 16px;
+  font-weight: bold;
+
 }
 
 .botones {
@@ -65,19 +83,22 @@ h2 {
   height: 55px;
   width: 164px;
   border: 3px solid #03318c;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
 }
 
-
+.botones button:hover {
+  scale: 1.05;
+  transition: 0.25s;
+}
 
 .btn-enviar {
   background-color: #03318c;
   color: #FFFFFF;
 }
 
-.btn-enviar:hover {
-  background-color: #8c0375;
+.btn-enviar:active {
+  background-color: #9303a6;
 }
 
 
@@ -172,7 +193,7 @@ h2 {
 .descripcion-card h3 {
   font-weight: 200;
   font-size: 15px;
-  
+
 }
 
 .descripcion-card span {
@@ -224,4 +245,11 @@ footer .footer-alura {
 
 .footer h2 {
   font-size: 24px;
+}
+
+@media screen and (min-width: 425px) {
+  main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
 }
